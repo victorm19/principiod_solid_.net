@@ -4,6 +4,8 @@ namespace SingleResponsability
 {
     public class ExportHelper {
 
+        //TODO: LA CLASE DEBE SER GENERICA Y SOPORTAR DIFERENTES TIPOS DE EXPORTACION
+
         public void ExportEstudents(IEnumerable<Student> students) 
         {
             string csv = String.Join(",", students.Select(x => x.ToString()).ToArray());
